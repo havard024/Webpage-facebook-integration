@@ -76,6 +76,22 @@
 
 <fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
 
+<fb:registration redirect_uri='http://localhost:8000/form.html'  fields="[
+ {'name':'name'},
+ {'name':'email'},
+ {'name':'location'},
+ {'name':'gender'},
+ {'name':'birthday'},
+ {'name':'password'},
+ {'name':'like',       'description':'Do you like this plugin?', 'type':'checkbox',  'default':'checked'},
+ {'name':'phone',      'description':'Phone Number',             'type':'text'},
+ {'name':'anniversary','description':'Anniversary',              'type':'date'},
+ {'name':'captain',    'description':'Best Captain',             'type':'select',    'options':{'P':'Jean-Luc Picard','K':'James T. Kirk'}},
+ {'name':'force',      'description':'Which side?',              'type':'select',    'options':{'jedi':'Jedi','sith':'Sith'}, 'default':'sith'},
+ {'name':'live',       'description':'Best Place to Live',       'type':'typeahead', 'categories':['city','country','state_province']},
+ {'name':'captcha'}
+]" />
+
 <script>
 
 </script>
